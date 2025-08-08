@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="MailApp">
+  <Id>f9d6c0c5-1234-4e22-b59e-111111111111</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Custom Outlook Tools</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName>Category Cleaner</DisplayName>
+  <Description>Clean up unused categories in your Outlook mailbox.</Description>
+  <IconUrl DefaultValue="https://gmelvill.github.io/outlook-category-cleaner/web/icon.png"/>
+  <SupportUrl DefaultValue="https://github.com/gmelvill/outlook-category-cleaner"/>
+  
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  
+  <Requirements>
+    <Sets DefaultMinVersion="1.8">
+      <Set Name="Mailbox"/>
+    </Sets>
+  </Requirements>
+
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://gmelvill.github.io/outlook-category-cleaner/web/taskpane.html"/>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+
+  <Permissions>ReadWriteMailbox</Permissions>
+</OfficeApp>
